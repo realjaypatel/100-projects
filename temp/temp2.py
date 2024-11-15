@@ -13,7 +13,7 @@ final_data['reconciliation_status'] = np.select(
        (final_data['foracid'] == 19051) &(final_data['credit_amt'] == final_data['debit_amt']), 
     ],
    ['Not Reversed', 'Partially Reversed', 'Reversed','Not Reversed', 'Partially Reversed', 'Reversed'],
-   default='unk'
+   default='Not Reversed'
 )
 print(final_data)
 
